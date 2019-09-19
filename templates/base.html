@@ -1,0 +1,20 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block head %}
+    {{ super() }}
+    {% block meta %}
+    <title>
+        {% block titulo %} Precios {% endblock%}
+    </title>
+
+    {% endblock %}
+{% endblock %}
+
+
+{% block body %} 
+    {% block navbar %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+{% endblock %}

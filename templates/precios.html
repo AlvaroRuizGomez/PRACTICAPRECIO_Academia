@@ -1,0 +1,23 @@
+<!--********************** -->
+{% extends 'base.html' %}
+<!--********************** -->
+{% block content %}
+<div class="container">
+    {% for i in tres_columnas %}
+        <div class="row">
+            <div class="col-md-4"> 
+            {% for c in i.values %}
+                <h4>{{ 'titulo' }}</h4>
+                <img src="
+                    {{ url_for('static', filename='img/{img}') }}" alt="">
+                <h2>{{ ['titulo'] }}</h2>
+                <h3>{{ ['subtitulo'] }}</h3>
+                <h1>{{ ['precio'] }}</h1>
+                <h3>{{ ['enlace'] }}</h3>
+                <a>{{ ['boton'] }}</a> 
+            {% endfor %}
+            </div>
+        </div>    
+    {% endfor %}
+</div>
+{% endblock %}
